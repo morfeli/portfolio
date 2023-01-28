@@ -1,6 +1,7 @@
 import NavItem from "./NavItem";
 import classNames from "classnames";
 import { motion, AnimatePresence } from "framer-motion";
+import MorfeliSVG from "components/UI/MorfeliSVG";
 
 type MobileMenuProps = {
   isOpen: boolean;
@@ -44,7 +45,7 @@ const itemVariants = {
 
 const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
   const navStyles = classNames(
-    "fixed w-screen top-20 right-0 z-40 bg-body flex flex-col items-center justify-evenly h-screen"
+    "md:hidden fixed w-screen top-20 right-0 z-40 bg-[#6c757d] flex flex-col items-center justify-evenly h-screen"
   );
 
   const ulStyles = classNames({
@@ -89,6 +90,7 @@ const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
                 />
               );
             })}
+            <MorfeliSVG mobile />
           </motion.ul>
           {/* <motion.div
             initial={{ x: 100, opacity: 0 }}
