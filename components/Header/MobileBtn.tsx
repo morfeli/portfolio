@@ -8,7 +8,7 @@ type MobileBtnProps = {
 export const MobileBtn = ({ isOpen, toggleMenu }: MobileBtnProps) => {
   return (
     <div>
-      <button className="relative group" onClick={toggleMenu}>
+      <button className="relative z-100" onClick={toggleMenu}>
         <div
           className={classNames(
             "relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all ring-0 bg-slate-700 hover:ring-8 ring-gray-300 ring-opacity-30 duration-200 shadow-md",
@@ -53,7 +53,7 @@ export const MobileBtn = ({ isOpen, toggleMenu }: MobileBtnProps) => {
             >
               <div
                 className={classNames(
-                  "absolute bg-white h-[2px] w-5 transform transition-all duration-500  delay-300",
+                  "absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300",
                   {
                     "rotate-45": isOpen,
                   }
@@ -61,7 +61,7 @@ export const MobileBtn = ({ isOpen, toggleMenu }: MobileBtnProps) => {
               ></div>
               <div
                 className={classNames(
-                  "absolute bg-white h-[2px] w-5 transform transition-all duration-500  delay-300",
+                  "absolute bg-white h-[2px] w-5 transform transition-all duration-500 delay-300",
                   {
                     "-rotate-45": isOpen,
                   }
