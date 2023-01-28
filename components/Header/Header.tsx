@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Twitter, Github, LinkedIn } from "../UI/UI";
+import { Twitter, Github, LinkedIn, MorfeliSVG } from "../UI/UI";
 import { MobileBtn } from "./MobileBtn";
 import MobileMenu from "./MobileMenu";
 import { Navigation } from "./Navigation";
@@ -18,8 +18,8 @@ export const Header = () => {
 
   return (
     <header className="flex items-center justify-between p-4 text-white border-b-2 border-b-white md:flex-col md:h-screen md:border-b-0 md:border-r-2 md:p-0 md:w-56">
-      <h2 className="text-lg md:pt-8">@morfelidev</h2>
-
+      <MorfeliSVG />
+      <h2 className="italic tracking-wide">Felipe Moreira</h2>
       <Navigation />
       <div className="flex">
         <div className="flex items-center justify-between mr-4 w-28 md:mr-0 md:pb-8 md:w-44">
