@@ -1,6 +1,7 @@
+import { useState } from "react";
 import classNames from "classnames";
-import { SetStateAction } from "react";
 import { motion } from "framer-motion";
+import RightArrowSVG from "components/UI/RightArrowSVG";
 
 type NavItemProps = {
   link: string;
@@ -28,6 +29,8 @@ const NavItem = ({
   onClick,
   activeTab,
 }: NavItemProps) => {
+  const [hoverEffect, setHoverEffect] = useState<boolean>(false);
+
   return (
     <motion.a
       variants={variants}
@@ -43,17 +46,31 @@ const NavItem = ({
           {name}
         </li>
       ) : (
-        <li
-          onClick={onClick}
-          className={classNames(
-            "flex items-center justify-center h-32 py-16 mx-auto  hover:bg-[#6c757d] transition-colors delay-75 ease-in-out",
-            {
-              "bg-[#343a40]": activeTab === name,
-            }
-          )}
-        >
-          {name}
-        </li>
+        <>
+          <li
+            onMouseEnter={() => {
+              setHoverEffect((current) => !current);
+            }}
+            onMouseLeave={() => {
+              setHoverEffect(false);
+            }}
+            onClick={onClick}
+            className={classNames(
+              "flex items-center pl-8 h-32 py-16 mx-auto  transition-colors delay-75 ease-in-out relative",
+              {
+                "bg-[#6c757d]": activeTab === name,
+                "hover:bg-[#adb5bd]": activeTab !== name,
+              }
+            )}
+          >
+            {name}
+            <RightArrowSVG
+              hoverEffect={hoverEffect}
+              name={name}
+              activeTab={activeTab}
+            />
+          </li>
+        </>
       )}
     </motion.a>
   );

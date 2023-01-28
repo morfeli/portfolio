@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { Twitter, Github, LinkedIn } from "../UI/SocialLinks";
+import { Twitter, Github, LinkedIn } from "../UI/UI";
 import { MobileBtn } from "./MobileBtn";
 import MobileMenu from "./MobileMenu";
 import { Navigation } from "./Navigation";
@@ -22,7 +22,7 @@ export const Header = () => {
 
       <Navigation />
       <div className="flex">
-        <div className="flex items-center justify-between mr-4 w-28 md:mr-0 md:pb-8">
+        <div className="flex items-center justify-between mr-4 w-28 md:mr-0 md:pb-8 md:w-44">
           <Github />
           <Twitter />
           <LinkedIn />
