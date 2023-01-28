@@ -7,8 +7,8 @@ type MobileBtnProps = {
 
 export const MobileBtn = ({ isOpen, toggleMenu }: MobileBtnProps) => {
   return (
-    <div>
-      <button className="relative z-100" onClick={toggleMenu}>
+    <div className="md:hidden">
+      <button className="relative z-100 " onClick={toggleMenu}>
         <div
           className={classNames(
             "relative flex overflow-hidden items-center justify-center rounded-full w-[50px] h-[50px] transform transition-all ring-0 bg-slate-700 hover:ring-8 ring-gray-300 ring-opacity-30 duration-200 shadow-md",

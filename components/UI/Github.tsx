@@ -6,12 +6,7 @@ const Github = () => {
   return (
     <Link href="https://github.com/morfeli">
       <svg
-        className={classNames(
-          "cursor-pointer",
-          "transition-colors",
-          "md:scale-200",
-          "lg:scale-300"
-        )}
+        className="transition-all transform rounded-full cursor-pointer md:scale-200 lg:scale-300 ring-0 hover:ring-8 ring-gray-300 ring-opacity-30"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"

@@ -80,14 +80,13 @@ const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
             {links.map(({ name, to, id }) => {
               return (
                 <NavItem
+                  isMobile
                   key={id}
                   link={to}
-                  isMobile
                   closeMenu={closeMenu}
                   variants={itemVariants}
-                >
-                  {name}
-                </NavItem>
+                  name={name}
+                />
               );
             })}
           </motion.ul>
