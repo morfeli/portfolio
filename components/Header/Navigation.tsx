@@ -13,7 +13,7 @@ export const Navigation = () => {
   const [activeTab, setActiveTab] = useState<string>("About");
 
   return (
-    <nav className="hidden w-full md:flex ">
+    <nav className="hidden w-full mt-4 md:flex">
       <ul className="w-full text-center">
         {links.map(({ name, to, id }) => {
           return (
