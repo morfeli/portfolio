@@ -42,9 +42,7 @@ const NavItem = ({
       }}
     >
       {isMobile ? (
-        <li onClick={closeMenu} className="">
-          {name}
-        </li>
+        <li onClick={closeMenu}>{name}</li>
       ) : (
         <>
           <li
@@ -56,7 +54,7 @@ const NavItem = ({
             }}
             onClick={onClick}
             className={classNames(
-              "flex items-center pl-8 h-32 py-16 mx-auto transition-colors delay-75 ease-in-out relative tracking-wide",
+              "flex items-center pl-8 h-28 mx-auto transition-colors delay-75 ease-in-out relative tracking-wide",
               {
                 "bg-[#6c757d]": activeTab === name,
                 "hover:bg-[#adb5bd]": activeTab !== name,
