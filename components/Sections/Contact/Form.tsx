@@ -122,8 +122,11 @@ const Form = () => {
 
   return (
     <>
-      <form onSubmit={formSubmit} className="flex flex-col items-center">
-        <p>
+      <form
+        onSubmit={formSubmit}
+        className="flex flex-col items-center justify-start"
+      >
+        <p className="py-4 text-sm">
           Feel free to contact me in regards to any serious work opportunities.
         </p>
         <div className="pt-4">
