@@ -31,36 +31,15 @@ export const Header = () => {
     };
   }, [innerWidth]);
 
-  if (innerWidth! >= 768) {
-    return (
-      <aside className="sticky top-0 flex text-white items-center justify-between flex-col h-screen  border-b-0 border-r-4 p-0 w-[400px] overflow-hidden overflow-y-scroll bg-[#343a40]">
-        <div className="mt-2">
-          <MorfeliSVG />
-        </div>
-        <h2 className="italic tracking-wide">Felipe Moreira</h2>
-        <Navigation />
-        <div className="flex">
-          <div className="flex items-center justify-between pb-4">
-            <Github />
-            <Twitter />
-            <LinkedIn />
-          </div>
-          <MobileBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
-          <MobileMenu isOpen={isOpen} closeMenu={closeMenuHandler} />
-        </div>
-      </aside>
-    );
-  }
-
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between p-4 text-white border-b-2 border-b-white md:flex-col md:h-screen  md:border-b-0 md:border-r-4 md:p-0 md:w-[400px] overflow-hidden overflow-y-scroll bg-[#343a40]">
-      <div className="hidden mt-2 md:flex">
+    <header className="sticky top-0 z-50 flex items-center justify-between p-4 lg:p-0 text-white border-b-2 w-screen lg:w-[400px] border-b-white lg:flex-col lg:h-screen  lg:border-b-0 lg:border-r-4 ;g:p-0  overflow-hidden overflow-y-scroll bg-[#343a40]">
+      <div className="hidden mt-2 lg:flex">
         <MorfeliSVG />
       </div>
       <h2 className="italic tracking-wide">Felipe Moreira</h2>
       <Navigation />
       <div className="flex">
-        <div className="flex items-center justify-between mr-2 md:mr-0 md:pb-4">
+        <div className="flex items-center justify-between mr-2 lg:mr-0 lg:pb-4">
           <Github />
           <Twitter />
           <LinkedIn />

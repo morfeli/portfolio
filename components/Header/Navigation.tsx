@@ -34,7 +34,7 @@ export const Navigation = () => {
   // }, []);
 
   return (
-    <nav className="hidden w-full mt-2 md:flex">
+    <nav className="hidden w-full mt-2 lg:flex">
       <ul className="w-full text-center">
         {links.map(({ name, to, id }) => {
           return (

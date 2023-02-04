@@ -131,7 +131,7 @@ const Form = () => {
             name="name"
             placeholder="Name"
             className={classNames({
-              "p-2 rounded-md w-[30vw] outline-none text-black":
+              "p-2 rounded-md md:w-[30vw] outline-none text-black":
                 form.valid.name || form.touched.name,
               "p-2 rounded-md w-[30vw] border-2 border-red-800":
                 !form.valid.name && !form.touched.name,

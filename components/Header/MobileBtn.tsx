@@ -7,7 +7,7 @@ type MobileBtnProps = {
 
 export const MobileBtn = ({ isOpen, toggleMenu }: MobileBtnProps) => {
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <button className="relative z-100 " onClick={toggleMenu}>
         <div
           className={classNames(
