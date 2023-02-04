@@ -10,7 +10,7 @@ import trattoria from "../../public/trattoria.png";
 import travel from "../../public/travel.png";
 import viajar from "../../public/viajar.png";
 import feedback from "../../public/feedback.png";
-import { SectionLayout } from "./SectionLayout";
+import { SectionLayout } from "../Layouts/SectionLayout";
 
 const projectArray = [
   {
@@ -93,7 +93,6 @@ const projectArray = [
 export const Projects = () => {
   return (
     <SectionLayout link="Projects">
-      <h2 className="text-2xl">Projects</h2>
       <div className="grid gap-2 pt-4 justify-items-center grid-cols-repeatMin300px">
         {projectArray.map((item, i) => (
           <ul>

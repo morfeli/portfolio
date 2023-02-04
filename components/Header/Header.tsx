@@ -31,6 +31,27 @@ export const Header = () => {
     };
   }, [innerWidth]);
 
+  if (innerWidth! >= 768) {
+    return (
+      <aside className="sticky top-0 flex text-white items-center justify-between flex-col h-screen  border-b-0 border-r-4 p-0 w-[400px] overflow-hidden overflow-y-scroll bg-[#343a40]">
+        <div className="mt-2">
+          <MorfeliSVG />
+        </div>
+        <h2 className="italic tracking-wide">Felipe Moreira</h2>
+        <Navigation />
+        <div className="flex">
+          <div className="flex items-center justify-between pb-4">
+            <Github />
+            <Twitter />
+            <LinkedIn />
+          </div>
+          <MobileBtn isOpen={isOpen} toggleMenu={toggleMenuHandler} />
+          <MobileMenu isOpen={isOpen} closeMenu={closeMenuHandler} />
+        </div>
+      </aside>
+    );
+  }
+
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between p-4 text-white border-b-2 border-b-white md:flex-col md:h-screen  md:border-b-0 md:border-r-4 md:p-0 md:w-[400px] overflow-hidden overflow-y-scroll bg-[#343a40]">
       <div className="hidden mt-2 md:flex">

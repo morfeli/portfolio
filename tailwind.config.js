@@ -38,6 +38,7 @@ module.exports = {
       colors: {
         body: "#001219",
         typographySecondary: "#afbac1",
+        overLay: "rgba(0, 0, 0, 0.3)",
       },
       gridTemplateColumns: {
         repeatMin300px: "repeat(auto-fit,minmax(300px,1fr))",

@@ -1,6 +1,4 @@
-import Image from "next/image";
-
-import { SectionLayout } from "./SectionLayout";
+import { SectionLayout } from "../Layouts/SectionLayout";
 import { TeamList } from "./TeamList";
 
 const teamList = [
@@ -23,8 +21,6 @@ const teamList = [
 export const Teams = () => {
   return (
     <SectionLayout link="Teams">
-      <h2 className="text-2xl">Teams</h2>
-
       <ul className="grid gap-4 grid-cols-repeatMin300px lg:justify-items-center">
         {teamList.map(({ href, src, team, title, id }, i) => {
           return (

@@ -37,6 +37,7 @@ const NavItem = ({
       href={`#${link}`}
       onClick={(e) => {
         const section = document.getElementById(`${link}`);
+        console.log(section);
         e.preventDefault();
         section && section.scrollIntoView({ behavior: "smooth" });
       }}

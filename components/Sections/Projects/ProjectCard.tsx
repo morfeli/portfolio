@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/legacy/image";
 
 type ProjectCardProps = {
   image: string;
@@ -17,7 +18,15 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <motion.div className="flex flex-col items-center p-4 m-2 rounded-md w-[325px] relative text-center">
-      <img src={image} alt="project" className="w-full rounded-lg h-72" />
+      <div>
+        <Image
+          src={image}
+          alt="project"
+          width={300}
+          height={300}
+          className="rounded-md"
+        />
+      </div>
       <div className="py-4">
         <p className="pb-2">{name}</p>
         <p className="pb-2">{description}</p>

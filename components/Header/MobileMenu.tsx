@@ -9,11 +9,11 @@ type MobileMenuProps = {
 };
 
 const links = [
-  { name: "About", to: "about", id: 1 },
-  { name: "Teams", to: "teams", id: 2 },
-  { name: "Projects", to: "projects", id: 3 },
-  { name: "NFTs", to: "crypto", id: 4 },
-  { name: "Contact", to: "contact", id: 5 },
+  { name: "About", to: "About", id: 1 },
+  { name: "Teams", to: "Teams", id: 2 },
+  { name: "Projects", to: "Projects", id: 3 },
+  // { name: "NFTs", to: "crypto", id: 4 },
+  { name: "Contact", to: "Contact", id: 5 },
 ];
 
 const navBarVariants = {
@@ -90,23 +90,23 @@ const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
                 />
               );
             })}
-            <MorfeliSVG mobile />
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{
+                delay: 0.2,
+                duration: 0.8,
+                type: "spring",
+                stiffness: 100,
+              }}
+              exit={{
+                opacity: 0,
+                x: "100%",
+              }}
+            >
+              <MorfeliSVG mobile />
+            </motion.div>
           </motion.ul>
-          {/* <motion.div
-            initial={{ x: 100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{
-              delay: 0.1,
-              duration: 0.3,
-              type: "spring",
-              stiffness: 100,
-            }}
-            exit={{
-              opacity: 0,
-              x: "100%",
-            }}
-            className="landing-container__mobileMenu-socialBox"
-          ></motion.div> */}
         </motion.nav>
       )}
     </AnimatePresence>
