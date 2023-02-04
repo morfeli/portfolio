@@ -3,7 +3,7 @@ function StorysetSVG() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 500 500"
-      className="w-96 h-96"
+      className="w-80 h-72 md:w-96 md:h-96"
     >
       <ellipse
         cx="249.05"

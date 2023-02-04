@@ -22,7 +22,7 @@ export const ProjectCard = ({
         <Image
           src={image}
           alt="project"
-          width={300}
+          width={400}
           height={300}
           className="rounded-md"
         />

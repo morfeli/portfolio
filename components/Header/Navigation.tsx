@@ -12,27 +12,6 @@ const links = [
 export const Navigation = () => {
   const [activeTab, setActiveTab] = useState<string>("About");
 
-  // const changeBackground = () => {
-  //   if (window.scrollY >= 0 && window.scrollY < 270) {
-  //     setActiveTab("About");
-  //   }
-
-  //   if (window.scrollY >= 271 && window.scrollY < 510) {
-  //     setActiveTab("Teams");
-  //   }
-
-  //   if (window.scrollY >= 511 && window.scrollY < 2150) {
-  //     setActiveTab("Projects");
-  //   }
-  //   if (window.scrollY >= 2151) {
-  //     setActiveTab("Contact");
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", changeBackground);
-  // }, []);
-
   return (
     <nav className="hidden w-full mt-2 lg:flex">
       <ul className="w-full text-center">
