@@ -137,9 +137,9 @@ const Form = () => {
             name="name"
             placeholder="Name"
             className={classNames({
-              "p-2 rounded-md w-72 md:w-[30vw] outline-none text-black":
+              "p-2 rounded-md md:w-[30vw] outline-none text-black":
                 form.valid.name || form.touched.name,
-              "p-2 rounded-md w-[30vw] border-2 border-red-800":
+              "p-2 rounded-md md:w-[30vw] border-2 border-red-800":
                 !form.valid.name && !form.touched.name,
             })}
             onChange={(e) =>
@@ -164,7 +164,7 @@ const Form = () => {
             name="email"
             placeholder="Email"
             className={classNames({
-              "p-2 rounded-md w-72 md:w-[30vw] outline-none text-black":
+              "p-2 rounded-md  md:w-[30vw] outline-none text-black":
                 form.valid.email || form.touched.email,
               "p-2 rounded-md md:w-[30vw]  border-2 border-red-800":
                 !form.valid.email && !form.touched.email,
@@ -190,7 +190,7 @@ const Form = () => {
             name="phoneNumber"
             placeholder="Phone Number"
             className={classNames({
-              "p-2 rounded-md w-72 md:w-[30vw]  outline-none text-black":
+              "p-2 rounded-md  md:w-[30vw]  outline-none text-black":
                 form.valid.phone || form.touched.phone,
               "p-2 rounded-md md:w-[30vw] border-2 border-red-800":
                 !form.valid.phone && !form.touched.phone,
@@ -216,7 +216,7 @@ const Form = () => {
             cols={20}
             placeholder="Message"
             className={classNames({
-              "p-2 rounded-md w-72 md:w-[30vw]  outline-none text-black":
+              "p-2 rounded-md  md:w-[30vw]  outline-none text-black":
                 form.valid.message || form.touched.message,
               "p-2 rounded-md md:w-[30vw] border-2 border-red-800":
                 !form.valid.message && !form.touched.message,
