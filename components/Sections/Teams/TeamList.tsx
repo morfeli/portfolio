@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 type TeamListProps = {
   href: string;
@@ -9,7 +10,12 @@ type TeamListProps = {
 
 export const TeamList = ({ href, src, team, title }: TeamListProps) => {
   return (
-    <a href={href} target="_blank">
+    <motion.a
+      href={href}
+      target="_blank"
+      whileHover={{ y: -5 }}
+      transition={{ duration: 0.2 }}
+    >
       <div className="flex items-center justify-between p-4 my-4 bg-gray-400 rounded-md lg:w-[30vw]">
         <div className="flex items-center ">
           <Image
@@ -23,6 +29,6 @@ export const TeamList = ({ href, src, team, title }: TeamListProps) => {
         </div>
         <p className="text-sm">{title}</p>
       </div>
-    </a>
+    </motion.a>
   );
 };
