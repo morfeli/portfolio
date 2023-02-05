@@ -47,6 +47,7 @@ const NavItem = ({
       ) : (
         <>
           <li
+            id={`navLink-${link}`}
             onMouseEnter={() => {
               setHoverEffect((current) => !current);
             }}

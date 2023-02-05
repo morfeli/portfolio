@@ -9,8 +9,16 @@ const links = [
   { name: "Contact", to: "Contact", id: 5 },
 ];
 
-export const Navigation = () => {
+type NavigationProps = {
+  active: string;
+};
+
+export const Navigation = ({ active }: NavigationProps) => {
   const [activeTab, setActiveTab] = useState<string>("About");
+
+  useEffect(() => {
+    setActiveTab(active);
+  }, [active]);
 
   return (
     <nav className="hidden w-full mt-2 lg:flex">

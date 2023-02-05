@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Quicksand } from "@next/font/google";
 import { Header } from "components/Header/Header";
 import { MyContent } from "components/Sections/Layouts/MyContent";
+import { useEffect } from "react";
 
 const quicksand300 = Quicksand({ subsets: ["latin"], weight: "300" });
 const quicksand400 = Quicksand({ subsets: ["latin"], weight: "400" });

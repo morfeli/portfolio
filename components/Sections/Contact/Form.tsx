@@ -114,7 +114,7 @@ const Form = () => {
     setForm(intialFormState);
   };
 
-  const inputContainerStyles = classNames("pt-4");
+  const inputContainerStyles = "pt-4";
 
   const btnStyles = classNames(
     "w-28 h-10 mt-4 rounded-md bg-white text-black shadow-lg hover:bg-slate-200"
@@ -164,9 +164,9 @@ const Form = () => {
             name="email"
             placeholder="Email"
             className={classNames({
-              "p-2 rounded-md w-72 md:w-[30vw]  outline-none text-black":
+              "p-2 rounded-md w-72 md:w-[30vw] outline-none text-black":
                 form.valid.email || form.touched.email,
-              "p-2 rounded-md w-[30vw]  border-2 border-red-800":
+              "p-2 rounded-md md:w-[30vw]  border-2 border-red-800":
                 !form.valid.email && !form.touched.email,
             })}
             onChange={(e) =>
@@ -192,7 +192,7 @@ const Form = () => {
             className={classNames({
               "p-2 rounded-md w-72 md:w-[30vw]  outline-none text-black":
                 form.valid.phone || form.touched.phone,
-              "p-2 rounded-md w-[30vw] border-2 border-red-800":
+              "p-2 rounded-md md:w-[30vw] border-2 border-red-800":
                 !form.valid.phone && !form.touched.phone,
             })}
             onChange={(e) =>
@@ -218,7 +218,7 @@ const Form = () => {
             className={classNames({
               "p-2 rounded-md w-72 md:w-[30vw]  outline-none text-black":
                 form.valid.message || form.touched.message,
-              "p-2 rounded-md w-[30vw] border-2 border-red-800":
+              "p-2 rounded-md md:w-[30vw] border-2 border-red-800":
                 !form.valid.message && !form.touched.message,
             })}
             onChange={(e) =>

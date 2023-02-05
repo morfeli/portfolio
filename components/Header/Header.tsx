@@ -7,6 +7,7 @@ import { Navigation } from "./Navigation";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [active, setActive] = useState<string>("About");
   const [innerWidth, setInnerWidth] = useState<number>();
 
   const toggleMenuHandler = (): void => {
@@ -19,15 +20,32 @@ export const Header = () => {
 
   const changeWidth = () => setInnerWidth(window.innerWidth);
 
+  // const changeBackground = () => {
+  //   console.log(window.scrollY);
+
+  //   if (window.scrollY >= 0 && window.scrollY <= 279) {
+  //     setActive("About");
+  //   } else if (window.scrollY >= 280 && window.scrollY <= 525) {
+  //     setActive("Teams");
+  //   } else if (window.scrollY >= 526 && window.scrollY <= 2349) {
+  //     setActive("Projects");
+  //   }
+  // };
+
   useEffect(() => {
     changeWidth();
+    // changeBackground();
+
     window.addEventListener("resize", changeWidth);
+    // window.addEventListener("scroll", changeBackground);
 
     if (innerWidth == 768) {
       setIsOpen(false);
     }
+
     return () => {
       window.removeEventListener("resize", changeWidth);
+      // window.removeEventListener("scroll", changeBackground);
     };
   }, [innerWidth]);
 
@@ -47,7 +65,7 @@ export const Header = () => {
         <MorfeliSVG />
       </div>
       <h2 className="italic tracking-wide">Felipe Moreira</h2>
-      <Navigation />
+      <Navigation active={active} />
       <div className="flex">
         <div className="flex items-center justify-between mr-2 lg:mr-0 lg:pb-4">
           <Github />
