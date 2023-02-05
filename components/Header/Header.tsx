@@ -31,6 +31,16 @@ export const Header = () => {
     };
   }, [innerWidth]);
 
+  useEffect(() => {
+    const section = document.getElementById("body");
+
+    if (isOpen) {
+      section?.classList.add("open");
+    } else {
+      section?.classList.remove("open");
+    }
+  }, [isOpen]);
+
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between p-4 lg:p-0 text-white border-b-2 w-screen lg:w-[400px] border-b-white lg:flex-col lg:h-screen  lg:border-b-0 lg:border-r-4 ;g:p-0  overflow-hidden overflow-y-scroll bg-[#343a40]">
       <div className="hidden mt-2 lg:flex">

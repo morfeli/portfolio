@@ -5,3 +5,7 @@
 body {
   background-color: #343a40;
 }
+
+.open {
+  overflow: hidden;
+}
