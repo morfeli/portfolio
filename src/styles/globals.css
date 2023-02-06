@@ -9,3 +9,11 @@ body {
 .open {
   overflow: hidden;
 }
+
+.contactStyle {
+  background-color: #6c757d;
+}
+
+.removeStyle {
+  background-color: unset;
+}
