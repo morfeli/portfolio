@@ -134,7 +134,7 @@ const Form = () => {
 
   return (
     <>
-      <div className="lg:flex lg:justify-evenly lg:items-center">
+      <div className="md:flex md:justify-evenly md:items-center">
         <form
           onSubmit={formSubmit}
           className="flex flex-col items-center justify-start lg:h-[555px]"
