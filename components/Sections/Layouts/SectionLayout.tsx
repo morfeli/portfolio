@@ -19,7 +19,7 @@ export const SectionLayout = ({
       <div>
         <h2 className="text-3xl">{link}</h2>
         {children}
-        {link !== "Contact" && <hr className="mt-4" />}
+        {link !== "Contact" && <hr className="mt-10" />}
       </div>
     </section>
   );

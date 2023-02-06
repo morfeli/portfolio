@@ -58,7 +58,6 @@ const NavItem = ({
             className={classNames(
               "flex items-center pl-8 h-28 mx-auto transition-colors delay-75 ease-in-out relative tracking-wide",
               {
-                // "bg-[#6c757d]": activeTab === name,
                 "hover:bg-[#adb5bd]": activeTab !== name,
               }
             )}

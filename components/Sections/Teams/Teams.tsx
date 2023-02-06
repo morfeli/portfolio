@@ -21,7 +21,7 @@ const teamList = [
 export const Teams = () => {
   return (
     <SectionLayout link="Teams">
-      <ul className="grid gap-4 pt-8 grid-cols-repeatMin300px lg:justify-items-center h-60">
+      <ul className="grid gap-4 py-2 grid-cols-repeatMin300px lg:justify-items-center h-60">
         {teamList.map(({ href, src, team, title, id }, i) => {
           return (
             <TeamList

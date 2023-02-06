@@ -23,7 +23,6 @@ export default function Home() {
 
         if (top >= offset && top < offset + height) {
           target!.style.backgroundColor = "#6c757d";
-          // console.log(target);
         } else {
           target!.style.backgroundColor = "";
         }
