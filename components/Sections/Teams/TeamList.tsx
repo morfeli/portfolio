@@ -16,7 +16,7 @@ export const TeamList = ({ href, src, team, title }: TeamListProps) => {
       whileHover={{ y: -5 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="flex items-center justify-between p-4 my-4 bg-gray-400 rounded-md lg:w-[30vw]">
+      <div className="flex items-center justify-between p-4 my-2 bg-gray-400 rounded-md lg:w-[30vw]">
         <div className="flex items-center ">
           <Image
             src={src}
