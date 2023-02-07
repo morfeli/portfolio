@@ -17,7 +17,7 @@ export const ProjectCard = ({
   link,
 }: ProjectCardProps) => {
   return (
-    <motion.div className="flex flex-col items-center p-4 m-2 rounded-md w-[325px] relative text-center">
+    <motion.div className="flex flex-col items-center p-4 m-1 rounded-md w-[325px] relative text-center">
       <div>
         <Image
           src={image}
@@ -27,7 +27,7 @@ export const ProjectCard = ({
           className="rounded-md"
         />
       </div>
-      <div className="py-4">
+      <div className="py-2">
         <p className="pb-2">{name}</p>
         <p className="pb-2">{description}</p>
         {link ? (
