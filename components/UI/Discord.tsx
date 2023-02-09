@@ -4,7 +4,10 @@ import classNames from "classnames";
 
 const Discord = () => {
   return (
-    <Link href="https://discordapp.com/users/784621534119591946">
+    <Link
+      href="https://discordapp.com/users/784621534119591946"
+      target="_blank"
+    >
       <svg
         className="scale-150 cursor-pointer"
         xmlns="http://www.w3.org/2000/svg"
