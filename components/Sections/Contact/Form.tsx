@@ -135,13 +135,13 @@ const Form = () => {
   return (
     <>
       <div className="md:flex md:justify-evenly md:items-center">
-        <form
-          onSubmit={formSubmit}
-          className="flex flex-col items-center justify-start lg:h-[555px]"
-        >
-          <p className="py-4 text-sm">
+        <form onSubmit={formSubmit}>
+          <p className="py-4 md:w-[350px] lg:w-[500px]">
             Feel free to contact me in regards to any serious work
-            opportunities.
+            opportunities. I'm always open to collab on new & exisiting
+            projects. Whether you have a project you'd like to discuss, want to
+            share your work, or just say hi — please don't hesitate to
+            reach out!
           </p>
           <div className="pt-4">
             <label htmlFor="name" />

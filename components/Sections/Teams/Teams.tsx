@@ -3,13 +3,6 @@ import { TeamList } from "./TeamList";
 
 const teamList = [
   {
-    id: 0,
-    href: "https://www.falseidols.xyz/",
-    src: "/false-idols-img.jpg",
-    team: "False Idols",
-    title: "Frontend Engineer",
-  },
-  {
     id: 1,
     href: "https://pedra.app/",
     src: "/pedra-img.png",
