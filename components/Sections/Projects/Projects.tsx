@@ -1,15 +1,4 @@
 import { ProjectCard } from "./ProjectCard";
-
-import audiophile from "../../public/audiophile.png";
-import bistro from "../../public/bistro.png";
-import demelo from "../../public/demelo.png";
-import designo from "../../public/designo.png";
-import planets from "../../public/planets.png";
-import pyro from "../../public/pyro.png";
-import trattoria from "../../public/trattoria.png";
-import travel from "../../public/travel.png";
-import viajar from "../../public/viajar.png";
-import feedback from "../../public/feedback.png";
 import { SectionLayout } from "../Layouts/SectionLayout";
 
 const projectArray = [
@@ -18,7 +7,7 @@ const projectArray = [
     name: "Viajar Turismo",
     href: null,
     description:
-      "Travel Agency company based in Brazil. Built with Next.js & TailwindCSS.",
+      "Travel Agency company located in Brazil. Built with Next.js & TailwindCSS.",
     image: "/viajar.png",
   },
 
@@ -27,7 +16,7 @@ const projectArray = [
     name: "Travel Bud",
     href: "https://travel-bud-morfeli.vercel.app/",
     description:
-      "A friendly user travel app. Allows users to locate nearby venues, save venues and post a rating regarding their experience. Built with Next.js, TailwindCSS, MongoDB & Node.js",
+      "A friendly user travel app. Users are able to locate nearby venues, save venues and post a rating regarding their experience. Built with Next.js, TailwindCSS, MongoDB & Node.js",
     image: "/travel.png",
   },
   {
