@@ -5,7 +5,7 @@ const projectArray = [
   {
     id: 13,
     name: "Viajar Turismo",
-    href: null,
+    href: "https://viajar-turismo.vercel.app/",
     description:
       "Travel Agency company located in Brazil. Built with Next.js & TailwindCSS.",
     image: "/viajar.png",
