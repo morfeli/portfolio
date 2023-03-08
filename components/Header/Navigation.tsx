@@ -6,6 +6,7 @@ const links = [
   { name: "Teams", to: "Teams", id: 2 },
   { name: "Projects", to: "Projects", id: 3 },
   // { name: "NFTs", to: "crypto", id: 4 },
+  { name: "Blog", to: "Blog", id: 4 },
   { name: "Contact", to: "Contact", id: 5 },
 ];
 

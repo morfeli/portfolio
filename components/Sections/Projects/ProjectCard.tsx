@@ -32,7 +32,7 @@ export const ProjectCard = ({
         <p className="pb-2">{description}</p>
         {link ? (
           <a href={link} target="_blank">
-            <button className="p-2 mt-2 text-black bg-gray-200 rounded-md">
+            <button className="p-2 mt-2 text-black bg-gray-200 rounded-lg hover:bg-gray-300">
               Live Site
             </button>
           </a>

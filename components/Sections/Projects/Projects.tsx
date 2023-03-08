@@ -3,6 +3,14 @@ import { SectionLayout } from "../Layouts/SectionLayout";
 
 const projectArray = [
   {
+    id: 14,
+    name: "BCI CRM",
+    href: "https://www.bcicrm.com/",
+    description:
+      "CRM dashboard solution for a client's internal system. Built with Remix.run, TailwindCSS, PlanetScale, MySQL and Prisma.",
+    image: "/bcicrm.png",
+  },
+  {
     id: 13,
     name: "Viajar Turismo",
     href: "https://viajar-turismo.vercel.app/",
@@ -77,14 +85,6 @@ const projectArray = [
       "Landing page for a clients restaurant. Built with Next.js & TailwindCSS.",
     image: "/trattoria.png",
   },
-
-  // {
-  //   id: 12,
-  //   name: "Pyro Analytics",
-  //   href: null,
-  //   description: "False Idols NFT analytics dashboard.",
-  //   image: "/pyro.png",
-  // },
 ];
 
 export const Projects = () => {

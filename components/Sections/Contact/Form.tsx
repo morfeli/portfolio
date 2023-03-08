@@ -1,6 +1,4 @@
 import { useState } from "react";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
 import { Modal } from "../../UI/Modal";
 import emailjs from "@emailjs/browser";
 import classNames from "classnames";

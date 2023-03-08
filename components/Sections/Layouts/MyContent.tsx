@@ -6,6 +6,7 @@ export const MyContent = () => {
       <Sections.About />
       <Sections.Teams />
       <Sections.Projects />
+      <Sections.Blog />
       {/* <Sections.NFTs /> */}
       <Sections.Contact />
     </main>

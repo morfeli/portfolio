@@ -14,7 +14,9 @@ export const SectionLayout = ({
   return (
     <section
       id={link}
-      className={classNames(`flex flex-col p-8 ${styleProps} lg:py-6`)}
+      className={classNames(
+        `flex flex-col p-8 ${styleProps} lg:py-6 h-min-screen`
+      )}
     >
       <div>
         <h2 className="text-3xl">{link}</h2>

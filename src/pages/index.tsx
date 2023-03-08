@@ -1,13 +1,7 @@
 import Head from "next/head";
 
-import { Quicksand } from "@next/font/google";
 import { Header } from "components/Header/Header";
 import { MyContent } from "components/Sections/Layouts/MyContent";
-import { useEffect } from "react";
-
-const quicksand300 = Quicksand({ subsets: ["latin"], weight: "300" });
-const quicksand400 = Quicksand({ subsets: ["latin"], weight: "400" });
-const quicksand500 = Quicksand({ subsets: ["latin"], weight: "500" });
 
 export default function Home() {
   // useEffect(() => {
@@ -15,7 +9,7 @@ export default function Home() {
 
   //   window.onscroll = () => {
   //     section.forEach((sec) => {
-  //       let top = window.scrollY + 150;
+  //       let top = window.scrollY + 200;
   //       let offset = sec.offsetTop;
   //       let height = sec.offsetHeight;
   //       let id = sec.getAttribute("id");
