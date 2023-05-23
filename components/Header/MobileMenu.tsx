@@ -45,9 +45,8 @@ const itemVariants = {
 };
 
 const MobileMenu = ({ isOpen, closeMenu }: MobileMenuProps) => {
-  const navStyles = classNames(
-    "lg:hidden fixed w-screen top-20 right-0 z-40 bg-[#6c757d] flex flex-col items-center justify-evenly h-screen"
-  );
+  const navStyles =
+    "lg:hidden fixed w-screen top-20 right-0 z-40 bg-[#6c757d] flex flex-col items-center justify-evenly h-screen";
 
   const ulStyles = classNames({
     hidden: !isOpen,

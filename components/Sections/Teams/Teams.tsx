@@ -4,9 +4,9 @@ import { TeamList } from "./TeamList";
 const teamList = [
   {
     id: 1,
-    href: "https://pedra.app/",
+    href: "https://www.outboundani.com/",
     src: "/pedra-img.png",
-    team: "Pedra",
+    team: "outboundANI",
     title: "Frontend Engineer",
   },
 ];
