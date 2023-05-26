@@ -17,13 +17,13 @@ export const ProjectCard = ({
   link,
 }: ProjectCardProps) => {
   return (
-    <motion.div className="flex flex-col items-center p-4 m-1 rounded-md w-[325px] relative text-center">
+    <motion.div className="flex flex-col items-center p-4 m-1 rounded-md w-[350px] relative text-center">
       <div>
         <Image
           src={image}
           alt="project"
-          width={400}
-          height={300}
+          width={700}
+          height={500}
           className="rounded-md"
         />
       </div>

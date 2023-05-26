@@ -18,6 +18,14 @@ const projectArray = [
       "Travel Agency company located in Brazil. Built with Next.js & TailwindCSS.",
     image: "/viajar.png",
   },
+  {
+    id: 11,
+    name: "Pyro Analytics",
+    href: "https://www.pyroanalytics.xyz/",
+    description:
+      "Data analytics tool built based on the Cardano blockchain. Built with Next.js, SCSS, MongoDB & Node.js",
+    image: "/pyro.png",
+  },
 
   {
     id: 10,
@@ -90,7 +98,7 @@ const projectArray = [
 export const Projects = () => {
   return (
     <SectionLayout link="Projects">
-      <div className="grid gap-1 pt-4 justify-items-center grid-cols-repeatMin300px">
+      <div className="grid gap-1 pt-4 justify-items-center grid-cols-repeatMin300px lg:grid-cols-4">
         {projectArray.map((item, i) => (
           <ul>
             <ProjectCard
