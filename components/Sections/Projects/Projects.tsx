@@ -84,15 +84,6 @@ const projectArray = [
       "Landing page for a clients business. Built with Next.js & TailwindCSS.",
     image: "/demelo.png",
   },
-
-  {
-    id: 9,
-    name: "Trattoria Il Cafone",
-    href: "https://trattoriailcafone.com/",
-    description:
-      "Landing page for a clients restaurant. Built with Next.js & TailwindCSS.",
-    image: "/trattoria.png",
-  },
 ];
 
 export const Projects = () => {
