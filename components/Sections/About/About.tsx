@@ -4,9 +4,10 @@ export const About = () => {
   return (
     <SectionLayout link="About">
       <p className="py-6 text-lg  text-center leading-8 xl:w-[750px] lg:mx-auto md:px-20">
-        I'm a Frontend Engineer based in Miami, FL. I'm passionate in providing
-        a phenomenal user experience, clean code, and working within a team of
-        likeminded individuals.
+        I am a Frontend Engineer located in Miami, FL. I'm driven by my passion
+        to deliver exceptional user experiences and write clean code. I thrive
+        in collaborative environments where I can work alongside like-minded
+        individuals who share the same dedication and vision.
       </p>
 
       <p className="text-sm text-left w-[290px] mx-auto">
