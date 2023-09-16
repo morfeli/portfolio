@@ -41,9 +41,10 @@ module.exports = {
         overLay: "rgba(0, 0, 0, 0.3)",
       },
       gridTemplateColumns: {
-        repeatMin300px: "repeat(auto-fit,minmax(320px,1fr))",
+        repeatMin300px: "repeat(auto-fit,minmax(325px,1fr))",
         imageGrid: "repeat(auto-fit, minmax(375px, 1fr))",
         imageGridMD: "repeat(auto-fit, minmax(325px, 1fr))",
+        blogGrid: "repeat(auto-fit, minmax(300px, 1fr))",
       },
       height: {
         backfaceHeight: "22.3rem",

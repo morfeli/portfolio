@@ -89,7 +89,7 @@ const projectArray = [
 export const Projects = () => {
   return (
     <SectionLayout link="Projects">
-      <div className="grid gap-1 pt-4 justify-items-center grid-cols-repeatMin300px 2xl:grid-cols-4">
+      <div className="grid gap-1 py-4 justify-items-center grid-cols-repeatMin300px 2xl:grid-cols-4">
         {projectArray.map((item, i) => (
           <ul>
             <ProjectCard

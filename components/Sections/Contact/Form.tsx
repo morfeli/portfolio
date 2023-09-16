@@ -58,19 +58,6 @@ const intialFormState = {
 
 const Form = () => {
   const [form, setForm] = useState<UserLoginIn>(intialFormState);
-  // const [ref, inView] = useInView();
-
-  // useEffect(() => {
-  //   const links = document.getElementsByName("li");
-
-  //   const target = document.getElementById("navLink-Contact");
-  //   links.forEach((link) => link.classList.add("removeStyle"));
-  //   if (inView) {
-  //     target!.classList.add("contactStyle");
-  //   } else {
-  //     target!.classList.remove("contactStyle");
-  //   }
-  // }, [inView]);
 
   const [renderModal, setRenderModal] = useState(false);
 
@@ -101,9 +88,6 @@ const Form = () => {
       emailIsValid && nameIsValid && phoneIsValid && messageIsValid;
 
     if (!formIsValid) {
-      console.log("here");
-      console.log(form.email, form.message, form.name, form.phone);
-
       return;
     } else {
       setRenderModal(true);
@@ -132,14 +116,14 @@ const Form = () => {
 
   return (
     <>
-      <div className="md:flex md:justify-evenly md:items-center">
+      <div className="md:flex md:justify-evenly md:items-center py-4">
         <form onSubmit={formSubmit}>
           <p className="py-4 md:w-[350px] lg:w-[500px]">
             Feel free to contact me in regards to any serious work
             opportunities. I'm always open to collab on new & exisiting
             projects. Whether you have a project you'd like to discuss, want to
-            share your work, or just say hi — please don't hesitate to
-            reach out!
+            share your work, or just say hi — please don't hesitate to reach
+            out!
           </p>
           <div className="pt-4">
             <label htmlFor="name" />
