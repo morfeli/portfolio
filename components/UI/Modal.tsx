@@ -18,7 +18,7 @@ export const Modal = ({ show, onClose, children }: ModalProps) => {
 
   let modalContent = show ? (
     <div className="fixed top-0 flex items-center justify-center w-screen h-screen bg-overLay">
-      <div className="flex flex-col items-center p-8 bg-white rounded-md ml-[18rem] justify-evenly">
+      <div className="flex flex-col items-center p-8 bg-white rounded-md  justify-evenly">
         <p className="mb-4 text-center text-md">{children}</p>
         <motion.button
           onClick={onClose}
