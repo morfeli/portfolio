@@ -4,10 +4,10 @@ import { SectionLayout } from "../Layouts/SectionLayout";
 const projectArray = [
   {
     id: 14,
-    name: "BCI CRM",
-    href: "https://www.bcicrm.com/",
+    name: "OutboundANI LMS",
+    href: "https://ob-lms.vercel.app",
     description:
-      "CRM dashboard solution for a client's internal system. Built with Remix.run, TailwindCSS, PlanetScale, MySQL and Prisma.",
+      "CRM dashboard solution for outboundANI's clients. Built with Remix.run, TailwindCSS, PlanetScale, MySQL and Prisma.",
     image: "/bcicrm.png",
   },
   {
@@ -15,18 +15,9 @@ const projectArray = [
     name: "Viajar Turismo",
     href: "https://viajarturismo.com/",
     description:
-      "Travel Agency company located in Brazil. Built with Next.js & TailwindCSS.",
+      "Landing page for a travel agency company located in Brazil. Built with Next.js & TailwindCSS.",
     image: "/viajar.png",
   },
-  {
-    id: 11,
-    name: "Pyro Analytics",
-    href: "https://www.pyroanalytics.xyz/",
-    description:
-      "Data analytics tool built based on the Cardano blockchain. Built with Next.js, SCSS, MongoDB & Node.js",
-    image: "/pyro.png",
-  },
-
   {
     id: 10,
     name: "Travel Bud",
@@ -75,14 +66,6 @@ const projectArray = [
     description:
       "Landing page for a clients restaurant. Built with Next.js & TailwindCSS.",
     image: "/bistro.png",
-  },
-  {
-    id: 7,
-    name: "Demelo Dining",
-    href: "https://www.demelodining.com/",
-    description:
-      "Landing page for a clients business. Built with Next.js & TailwindCSS.",
-    image: "/demelo.png",
   },
 ];
 

@@ -7,10 +7,7 @@ export const About = () => {
         I'm a Software Developer based in Miami, FL. I thrive in collaborative
         environments where I enjoy working alongside like-minded individuals.
         I'm driven by an immeasurable passion for delivering high-end solutions
-        that solves complex architecture design objectives. I continuously learn
-        new skills to keep myself at the forefront. Working with technology
-        brings me a sense of satisfaction as my work comes to life while
-        positively impacting it's users.
+        that solves complex architecture design.
       </p>
     </SectionLayout>
   );
