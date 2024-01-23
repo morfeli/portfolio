@@ -49,7 +49,6 @@ export const Header = () => {
       <div className="hidden mt-2 lg:flex">
         <MorfeliSVG />
       </div>
-      <h2 className="italic tracking-wide">Felipe Moreira</h2>
       <Navigation />
       <div className="flex">
         <div className="flex items-center justify-between mr-2 lg:mr-0 lg:pb-4">

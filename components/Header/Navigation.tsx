@@ -3,7 +3,6 @@ import NavItem from "./NavItem";
 
 const links = [
   { name: "About", to: "About", id: 1 },
-  { name: "Teams", to: "Teams", id: 2 },
   { name: "Projects", to: "Projects", id: 3 },
   { name: "Contact", to: "Contact", id: 4 },
 ];
