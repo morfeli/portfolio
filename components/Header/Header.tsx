@@ -45,12 +45,12 @@ export const Header = () => {
   }, [isOpen]);
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between p-4 lg:p-0 text-white border-b-2 w-screen lg:w-[350px] border-b-white lg:flex-col lg:h-screen  lg:border-b-0 lg:border-r-4 ;g:p-0  overflow-hidden overflow-y-scroll bg-[#343a40]">
+    <header className="sticky top-0 z-50 flex items-center justify-between p-4 lg:p-0 text-white border-b-2 w-screen lg:w-[350px] border-b-white lg:flex-col lg:h-screen lg:border-b-0 lg:border-r-4 overflow-hidden overflow-y-scroll lg:py-4 bg-[#343a40]">
       <div className="hidden mt-2 lg:flex">
         <MorfeliSVG />
       </div>
       <Navigation />
-      <div className="flex">
+      <div className="flex justify-end w-full lg:justify-center">
         <div className="flex items-center justify-between mr-2 lg:mr-0 lg:pb-4">
           <Github />
           <Twitter />
