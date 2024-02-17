@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/legacy/image";
 
 type ProjectCardProps = {
   image: string;
   name: string;
 
-  description: string;
   link?: string | null;
 };
 
 export const ProjectCard = ({
   image,
   name,
-  description,
+
   link,
 }: ProjectCardProps) => {
   return (
@@ -26,18 +26,14 @@ export const ProjectCard = ({
           height={500}
           className="rounded-md"
         />
+        <p>{name}</p>
       </div>
-      <div className="py-2">
-        <p className="pb-2">{name}</p>
-        <p className="pb-2">{description}</p>
-        {link ? (
-          <a href={link} target="_blank">
-            <button className="p-2 mt-2 text-black bg-gray-200 rounded-lg hover:bg-gray-300">
-              Live Site
-            </button>
+      <div className="py-2 flex flex-col items-center hover:underline">
+        {link && (
+          <a href={link} target="_blank" className="flex items-center">
+            <p className="text-slate-200 rounded-lg flex items-center">View</p>
+            <ArrowUpRight width={12} height={12} />
           </a>
-        ) : (
-          <p>Coming soon</p>
         )}
       </div>
     </motion.div>
