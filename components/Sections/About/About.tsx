@@ -4,10 +4,13 @@ export const About = () => {
   return (
     <SectionLayout link="About">
       <p className="py-4 text-lg text-left xl:w-[750px] lg:mx-auto md:px-20">
-        I'm a Software Developer based in Miami, FL. I thrive in collaborative
-        environments where I enjoy working alongside like-minded individuals.
-        I'm driven by an immeasurable passion for delivering high-end solutions
-        that solves complex architecture design.
+        I’m a software engineer who possesses an intense passion for building
+        intuitive, robust, and secure web applications by leveraging
+        cutting-edge technologies. I'm fully committed to continuously expanding
+        my skill set to stay at the forefront of software development. I aspire
+        to surround myself with like-minded individuals who share the same goal
+        of building renowned software, sharing valuable knowledge, and further
+        honing our craft.
       </p>
     </SectionLayout>
   );
