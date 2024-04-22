@@ -1,5 +1,3 @@
-import Head from "next/head";
-
 import { Header } from "components/Header/Header";
 import { MyContent } from "components/Sections/Layouts/MyContent";
 
