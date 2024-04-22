@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/legacy/image";
@@ -6,16 +5,10 @@ import Image from "next/legacy/image";
 type ProjectCardProps = {
   image: string;
   name: string;
-
   link?: string | null;
 };
 
-export const ProjectCard = ({
-  image,
-  name,
-
-  link,
-}: ProjectCardProps) => {
+export const ProjectCard = ({ image, name, link }: ProjectCardProps) => {
   return (
     <motion.div className="flex flex-col items-center p-4 m-1 rounded-md w-[350px] relative text-center">
       <div>
