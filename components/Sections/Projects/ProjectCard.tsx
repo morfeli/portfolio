@@ -15,9 +15,10 @@ export const ProjectCard = ({ image, name, link }: ProjectCardProps) => {
         <Image
           src={image}
           alt="project"
-          width={700}
-          height={500}
-          className="rounded-md"
+          width={800}
+          height={700}
+          objectFit="fill"
+          className="rounded-xl"
         />
         <p>{name}</p>
       </div>

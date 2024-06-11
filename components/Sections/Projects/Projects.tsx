@@ -3,6 +3,12 @@ import { SectionLayout } from "../Layouts/SectionLayout";
 
 const projectArray = [
   {
+    id: 15,
+    name: "Butane",
+    href: "https://butane.dev/",
+    image: "/butane.png",
+  },
+  {
     id: 14,
     name: "OutboundANI LMS",
     href: "https://ob-lms.vercel.app",
