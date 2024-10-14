@@ -15,13 +15,7 @@ const projectArray = [
 
     image: "/bcicrm.png",
   },
-  {
-    id: 13,
-    name: "Viajar Turismo",
-    href: "https://viajarturismo.com/",
 
-    image: "/viajar.png",
-  },
   {
     id: 10,
     name: "Travel Bud",
@@ -34,17 +28,12 @@ const projectArray = [
     href: "https://feedback-dashboard-morfeli.vercel.app/",
     image: "/feedback.png",
   },
-  {
-    id: 6,
-    name: "Audiophile E-Commerce",
-    href: "https://audiophile-morfeli.vercel.app/",
-    image: "/audiophile.png",
-  },
 ];
 
 export const Projects = () => {
   return (
     <SectionLayout link="Projects">
+      <h2 className="py-4">Recent work</h2>
       <div className="grid gap-1 py-4 justify-items-center grid-cols-repeatMin300px">
         {projectArray.map((item, i) => (
           <ul>
