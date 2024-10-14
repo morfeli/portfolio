@@ -6,7 +6,7 @@ const projectArray = [
     id: 15,
     name: "Butane",
     href: "https://butane.dev/",
-    image: "/butane.png",
+    image: "/butane1.png",
   },
   {
     id: 14,
@@ -39,25 +39,6 @@ const projectArray = [
     name: "Audiophile E-Commerce",
     href: "https://audiophile-morfeli.vercel.app/",
     image: "/audiophile.png",
-  },
-  {
-    id: 5,
-    name: "Designo",
-    href: "https://designo-morfeli.vercel.app/",
-    image: "/designo.png",
-  },
-  {
-    id: 4,
-    name: "Planets",
-    href: "https://planets-morfeli.vercel.app/",
-    image: "/planets.png",
-  },
-
-  {
-    id: 11,
-    name: "Mello Bistro",
-    href: "https://mellobistro.com/",
-    image: "/bistro.png",
   },
 ];
 
