@@ -15,19 +15,6 @@ const projectArray = [
 
     image: "/bcicrm.png",
   },
-
-  {
-    id: 10,
-    name: "Travel Bud",
-    href: "https://travel-bud-morfeli.vercel.app/",
-    image: "/travel.png",
-  },
-  {
-    id: 8,
-    name: "Product Feedback",
-    href: "https://feedback-dashboard-morfeli.vercel.app/",
-    image: "/feedback.png",
-  },
 ];
 
 export const Projects = () => {
