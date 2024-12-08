@@ -4,9 +4,16 @@ import { SectionLayout } from "../Layouts/SectionLayout";
 const projectArray = [
   {
     id: 15,
-    name: "Butane",
+    name: "Butane Protocol",
+    desc: "An advanced synthetics protocol on the Cardano blockchain.",
     href: "https://butane.dev/",
     image: "/butane1.png",
+  },
+  {
+    id: 12,
+    name: "MetaDEX",
+    href: null,
+    image: "/metadex.png",
   },
   {
     id: 14,
