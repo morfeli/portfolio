@@ -12,6 +12,7 @@ const projectArray = [
   {
     id: 12,
     name: "MetaDEX",
+    desc: "Advanced Next-Generation DEX building on Cardano.",
     href: null,
     image: "/metadex.png",
   },
@@ -19,7 +20,7 @@ const projectArray = [
     id: 14,
     name: "OutboundANI LMS",
     href: "https://ob-lms.vercel.app",
-
+    desc: "OutboundIQ's proprietary lead management system.",
     image: "/bcicrm.png",
   },
 ];
@@ -36,6 +37,7 @@ export const Projects = () => {
               image={item.image}
               name={item.name}
               link={item.href}
+              desc={item.desc}
             />
           </ul>
         ))}
