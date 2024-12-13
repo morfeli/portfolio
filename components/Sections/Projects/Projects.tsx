@@ -9,13 +9,7 @@ const projectArray = [
     href: "https://butane.dev/",
     image: "/butane1.png",
   },
-  {
-    id: 12,
-    name: "MetaDEX",
-    desc: "Advanced Next-Generation DEX building on Cardano.",
-    href: null,
-    image: "/metadex.png",
-  },
+
   {
     id: 14,
     name: "OutboundANI LMS",
