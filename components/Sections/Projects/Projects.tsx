@@ -3,7 +3,15 @@ import { SectionLayout } from "../Layouts/SectionLayout";
 
 const projectArray = [
   {
-    id: 15,
+    id: 1,
+    name: "Oxperplex",
+    desc: "A RAG space-focused answer engine.",
+    href: "https://oxperplex.com",
+    image: "/oxperplex.png",
+  },
+
+  {
+    id: 2,
     name: "Butane Protocol",
     desc: "An advanced synthetics protocol on the Cardano blockchain.",
     href: "https://butane.dev/",
@@ -11,7 +19,7 @@ const projectArray = [
   },
 
   {
-    id: 14,
+    id: 3,
     name: "OutboundANI LMS",
     href: "https://ob-lms.vercel.app",
     desc: "OutboundIQ's proprietary lead management system.",
